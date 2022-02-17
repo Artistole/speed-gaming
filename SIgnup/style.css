@@ -32,6 +32,7 @@ header {
 
 .header-left {
 	display: flex;
+	position: relative;
 }
 
 .header-right {
@@ -44,6 +45,10 @@ header {
 	width: 15rem;
 	margin-top: -6rem;
 	margin-left: -2rem;
+}
+
+.logo-mobile {
+	display: none;
 }
 
 .header-contents {
@@ -189,4 +194,45 @@ a:visited {
 	position: relative;
 	left: 5rem;
 	color: var(--primary-color);
+}
+
+@media all and (max-width: 645px) {
+	.header-left {
+		display: none;
+	}
+
+	.logo-mobile {
+		display: block;
+		height: 10rem;
+		margin-top: -4rem;
+		margin-left: -8rem;
+		position: relative;
+		left: 6rem;
+	}
+
+	.search-wrapper {
+		display: none;
+	}
+
+	.header-right {
+		margin-left: -10rem;
+	}
+
+	.search-wrapper {
+		display: none;
+	}
+
+	.login-btn {
+		position: relative;
+		left: 13rem;
+		top: -0.3rem;
+	}
+
+	.email {
+		margin-bottom: 1rem;
+	}
+
+	.forgot-pwd {
+		margin-left: -2rem;
+	}
 }
