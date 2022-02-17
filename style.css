@@ -13,6 +13,7 @@
 	--primary-color: #21b0f2;
 	--login-wrapper-shadow: rgba(0, 0, 0, 0.3) 0rem 0.4rem 1.2rem;
 	--card-background-color: #e2e2e2;
+	--body-background-color: #f7f7f7;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 }
 
 body {
-	background-color: whitesmoke;
+	background-color: var(--body-background-color);
 }
 
 .header-left {
