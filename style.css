@@ -12,6 +12,7 @@
 	--header-shadow-light-color: 0.75em 0.75em 1em rgba(0, 0, 0, 0.3);
 	--primary-color: #21b0f2;
 	--login-wrapper-shadow: rgba(0, 0, 0, 0.3) 0rem 0.4rem 1.2rem;
+	--card-background-color: #e2e2e2;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
 	height: 6rem;
 	background-color: #fff;
 	justify-content: space-between;
+	z-index: 99;
 }
 
 .header-left {
@@ -99,7 +101,7 @@ header {
 }
 
 main {
-	margin-top: 20rem;
+	margin-top: 12rem;
 	font-size: 2rem;
 }
 
@@ -175,4 +177,90 @@ a:visited {
 	.forgot-pwd {
 		margin-left: -2rem;
 	}
+
+	.wishlist-container {
+		padding-left: 3rem;
+	}
+}
+
+.wishlist-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.wishlist-heading {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.card-container {
+	position: relative;
+	height: 32rem;
+	width: 22rem;
+	background-color: var(--card-background-color);
+	margin-top: 5rem;
+	margin-left: 5rem;
+}
+
+.card-image {
+	padding: 3rem 0rem 2rem 1rem;
+	height: 25rem;
+	width: 20rem;
+	margin-left: 0.5rem;
+}
+
+.card-text {
+	background-color: #fff;
+	text-align: center;
+	margin-top: -1.5rem;
+}
+
+.game-title {
+	font-size: 1.5rem;
+}
+
+.move-to-cart {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+.icon-bckg {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-color: #fff;
+	border-radius: 999rem;
+	cursor: pointer;
+}
+
+.heart-fill {
+	padding: 0.5rem 0rem 0rem 0.3rem;
+}
+
+.close {
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	height: 3rem;
+	width: 3rem;
+}
+
+.icon-bckg-close {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-color: #fff;
+	border-radius: 999rem;
+	cursor: pointer;
 }
