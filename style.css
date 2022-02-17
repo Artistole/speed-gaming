@@ -12,6 +12,11 @@
 	--header-shadow-light-color: 0.75em 0.75em 1em rgba(0, 0, 0, 0.3);
 	--primary-color: #21b0f2;
 	--login-wrapper-shadow: rgba(0, 0, 0, 0.3) 0rem 0.4rem 1.2rem;
+	--body-background-color: #f7f7f7;
+}
+
+body {
+	background-color: var(--body-background-color);
 }
 
 header {
