@@ -33,6 +33,7 @@ header {
 	height: 6rem;
 	background-color: #fff;
 	justify-content: space-between;
+	z-index: 1000;
 }
 
 .header-left {
@@ -104,7 +105,7 @@ header {
 }
 
 main {
-	margin-top: 20rem;
+	margin-top: 10rem;
 	font-size: 2rem;
 }
 
@@ -172,4 +173,84 @@ a:visited {
 		left: 13rem;
 		top: -0.3rem;
 	}
+
+	.card:nth-child(2),
+	.card:nth-child(3),
+	.card:nth-child(4) {
+		display: none;
+	}
+
+	.skip-next {
+		right: 0;
+	}
+
+	.main-content {
+		width: 90%;
+		margin-left: -4rem;
+	}
+
+	.skip-next {
+		display: none;
+	}
+
+	.skip-previous {
+		display: none;
+	}
+}
+
+.trending-name {
+	margin-left: 5rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.cards-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card-image {
+	height: 20rem;
+	width: 23rem;
+	margin: 2rem;
+}
+
+.main-content {
+	position: relative;
+}
+
+.main-image {
+	width: 90.5%;
+	height: 65%;
+	margin: 0rem 7rem 0rem 7rem;
+}
+
+.main-image-mobile {
+	display: none;
+}
+
+.skip-next {
+	position: absolute;
+	top: 50%;
+	height: 6rem;
+	width: 6rem;
+	right: 1rem;
+}
+
+.skip-previous {
+	position: absolute;
+	top: 50%;
+	height: 6rem;
+	width: 6rem;
+}
+
+.new-arrivals {
+	margin-top: 1rem;
+	margin-left: 0rem;
+}
+
+.new-arrivals-name {
+	font-weight: 600;
+	color: var(--primary-color);
+	margin-left: 5rem;
 }
