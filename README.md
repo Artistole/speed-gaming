@@ -7,7 +7,7 @@
 
 Speed Gaming Ecommerce is an online store for gaming lovers to buy games and gaming accessories.
 
-Site status: [![Netlify Status](#)
+Site status: [![Netlify Status](https://api.netlify.com/api/v1/badges/ce24a0ff-bc2e-494c-b36b-b56f6c7c2272/deploy-status)](https://app.netlify.com/sites/speed-ecom-screens/deploys)
 
 ---
 
@@ -29,5 +29,33 @@ Site status: [![Netlify Status](#)
 
 ---
 
-## Desktop Version
+## images
+Screens
+
+![image](https://user-images.githubusercontent.com/67518197/155105184-b79b70f7-e03e-449f-a40d-cef08e88bfd1.png)
+
+Homepage
+
+![image](https://user-images.githubusercontent.com/67518197/155105227-d4c8378d-9a06-4a29-bd65-f5a2c9bc140e.png)
+
+Products
+
+![image](https://user-images.githubusercontent.com/67518197/155105248-d8fab8c4-ad39-4ea0-9f7d-32daed19ba70.png)
+
+Wish list 
+
+![image](https://user-images.githubusercontent.com/67518197/155106039-eaec7b14-3308-49eb-90f0-db746a336eee.png)
+
+
+cart
+
+![image](https://user-images.githubusercontent.com/67518197/155105268-99354f8a-b945-46f6-825a-0392d00241ee.png)
+
+Sign up
+
+![image](https://user-images.githubusercontent.com/67518197/155105293-aac35d70-dd86-4128-9650-76a72904de2e.png)
+
+Login
+
+![image](https://user-images.githubusercontent.com/67518197/155105356-6d268b01-f3ea-4b5e-a267-13854ff1f4d4.png)
 
