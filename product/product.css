@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: "Montserrat", sans-serif;
+	font-size: 62.5%;
+	--header-shadow-light-color: 0.75em 0.75em 1em rgba(0, 0, 0, 0.3);
+	--primary-color: #21b0f2;
+	--login-wrapper-shadow: rgba(0, 0, 0, 0.3) 0rem 0.4rem 1.2rem;
+	--body-background-color: #f7f7f7;
+	--card-background-color: #e2e2e2;
+}
+
+body {
+	background-color: var(--body-background-color);
+}
+
+header {
+	box-shadow: var(--header-shadow-light-color);
+	position: fixed;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	padding-top: 2rem;
+	font-size: 2rem;
+	height: 6rem;
+	background-color: #fff;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.header-left {
+	display: flex;
+}
+
+.header-right {
+	display: flex;
+	margin-right: 10rem;
+}
+
+.logo {
+	height: 15rem;
+	width: 15rem;
+	margin-top: -6rem;
+	margin-left: -2rem;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+.header-contents {
+	display: flex;
+	flex-direction: row;
+}
+
+.genre {
+	padding-left: 2rem;
+}
+
+.serach-bar {
+	position: relative;
+	left: 10rem;
+	height: 2rem;
+	width: 35rem;
+	border: 2px solid var(--primary-color);
+	padding: 1.5rem;
+	padding-left: 3rem;
+	border-radius: 1rem;
+}
+
+.search-wrapper {
+	position: relative;
+	margin-left: -50rem;
+	margin-top: -0.5rem;
+}
+
+.serach-bar::placeholder {
+	font-size: 1.5rem;
+}
+
+.search-icon {
+	position: absolute;
+	left: 10rem;
+	top: 0.4rem;
+}
+
+.login-btn {
+	position: relative;
+	left: 10rem;
+	color: #fff;
+	background-color: var(--primary-color);
+	height: 3rem;
+	font-size: 1.8rem;
+	padding: 0.5rem;
+	margin-left: 10rem;
+	margin-right: 3rem;
+	cursor: pointer;
+}
+
+main {
+	margin-top: 10rem;
+	font-size: 2rem;
+	display: flex;
+}
+
+.wish-wrapper {
+	position: relative;
+	left: 10rem;
+	padding: 0rem 2rem 0rem 2rem;
+	cursor: pointer;
+}
+
+.cart-wrapper {
+	position: relative;
+	left: 9rem;
+	padding: 0rem 2rem 0rem 2rem;
+	cursor: pointer;
+}
+
+.badge {
+	height: 1.3rem;
+	width: 1.3rem;
+	border-radius: 9999rem;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	left: 3.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+@media all and (max-width: 645px) {
+	.header-left {
+		display: none;
+	}
+
+	.logo-mobile {
+		display: block;
+		height: 10rem;
+		margin-top: -4rem;
+		margin-left: -8rem;
+		position: relative;
+		left: 6rem;
+	}
+
+	.search-wrapper {
+		display: none;
+	}
+
+	.header-right {
+		margin-left: -15rem;
+	}
+
+	.search-wrapper {
+		display: none;
+	}
+
+	.login-btn {
+		position: relative;
+		left: 13rem;
+		top: -0.3rem;
+	}
+
+	.filters {
+		display: none;
+	}
+
+	.products {
+		margin: auto;
+		margin-left: -2rem;
+	}
+
+	.hamburger {
+		display: block;
+	}
+}
+
+.hamburger {
+	display: none;
+}
+
+.filters {
+	width: fit-content;
+	background-color: #fff;
+	padding: 2rem;
+	position: sticky;
+	height: fit-content;
+	top: 100px;
+}
+
+.filter-tag {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	font-weight: 600;
+}
+
+.clear {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.price-slider {
+	font-weight: 500;
+}
+
+.slider-range {
+	font-size: 1rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.category-tag {
+	display: flex;
+	flex-direction: column;
+	margin: 3rem 0rem 3rem 0rem;
+	font-weight: 500;
+}
+
+.checkbox {
+	display: flex;
+	margin-top: 1rem;
+}
+
+.checkbox-title {
+	margin: -0.5rem 0rem 0rem 1rem;
+	font-weight: 400;
+}
+
+.rating-tag {
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.radio {
+	margin-top: 1rem;
+	display: flex;
+}
+
+.radio-title {
+	font-weight: 400;
+	font-size: 2rem;
+	margin-top: -0.5rem;
+}
+
+.sort-by-tag {
+	font-weight: 600;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+.products {
+	flex-grow: 1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.card-container {
+	position: relative;
+	height: 25rem;
+	width: 22rem;
+	background-color: var(--card-background-color);
+	margin: 5rem 0rem 10rem 5rem;
+}
+
+.card-image {
+	padding: 3rem 0rem 2rem 1rem;
+	height: 25rem;
+	width: 20rem;
+	margin-left: 0.5rem;
+}
+
+.card-text {
+	background-color: #fff;
+	text-align: center;
+	margin-top: -0.5rem;
+}
+
+.game-title {
+	font-size: 1.5rem;
+}
+
+.move-to-cart {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-top: 0rem;
+	cursor: pointer;
+}
+
+.icon-bckg {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-color: #fff;
+	border-radius: 999rem;
+	cursor: pointer;
+}
+
+.heart-fill {
+	padding: 0.5rem 0rem 0rem 0.3rem;
+}
+
+.close {
+	position: absolute;
+	top: 0.1rem;
+	left: 0.1rem;
+	height: 3rem;
+	width: 3rem;
+}
+
+.icon-bckg-close {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-color: #fff;
+	border-radius: 999rem;
+	cursor: pointer;
+}
