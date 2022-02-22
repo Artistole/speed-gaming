@@ -56,15 +56,6 @@ header {
 	display: none;
 }
 
-.header-contents {
-	display: flex;
-	flex-direction: row;
-}
-
-.genre {
-	padding-left: 2rem;
-}
-
 .serach-bar {
 	position: relative;
 	left: 10rem;
@@ -78,6 +69,7 @@ header {
 
 .search-wrapper {
 	position: relative;
+	margin-top: -0.5rem;
 	margin-left: -50rem;
 }
 
@@ -104,6 +96,14 @@ header {
 	cursor: pointer;
 }
 
+.login-btn-a {
+	color: #fff;
+}
+
+.login-btn-a:visited {
+	color: #fff;
+}
+
 main {
 	margin-top: 10rem;
 	font-size: 2rem;
@@ -113,14 +113,12 @@ main {
 	position: relative;
 	left: 10rem;
 	padding: 0rem 2rem 0rem 2rem;
-	cursor: pointer;
 }
 
 .cart-wrapper {
 	position: relative;
 	left: 9rem;
 	padding: 0rem 2rem 0rem 2rem;
-	cursor: pointer;
 }
 
 .badge {
@@ -161,7 +159,8 @@ a:visited {
 	}
 
 	.header-right {
-		margin-left: -10rem;
+		margin-left: -19rem;
+		margin-right: 15rem;
 	}
 
 	.search-wrapper {
