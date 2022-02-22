@@ -331,4 +331,5 @@ a:visited {
 	text-align: center;
 	margin: auto;
 	padding: 0.5rem;
+	cursor: pointer;
 }
